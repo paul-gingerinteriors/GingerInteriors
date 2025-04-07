@@ -107,6 +107,16 @@ footer {
 i {
     color: #f37021;
     font-size: 1.7rem;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+i:hover {
+    color: orange;
+    box-shadow: 0 2px 8px rgba(191, 106, 2, 0.817);
+    transition: box-shadow 0.3s ease;
+    transition: color 0.3s ease;
+
 }
 
 .social-media {
