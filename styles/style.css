@@ -29,7 +29,7 @@ p, div {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .header {
@@ -55,6 +55,7 @@ section {
     text-align: center;
     background-color: grey;
     padding: 30px;
+    min-height: 85vh;
 }
 
 #hero-button {
