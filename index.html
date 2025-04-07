@@ -51,7 +51,14 @@
 
         <section class="contact">
             <h2>Contact Form</h2>
-            <button class="action-button">Submit</button>
+            <!-- https://formspree.io/f/YOUR_FORM_ID -->
+            <form class="form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button class="action-button" type="submit">Send</button>
+            </form>
+            
         </section>
     </main>
 
