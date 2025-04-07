@@ -83,6 +83,21 @@ main {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.service-card {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817);
+}
+
+.service-card > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f37021
+}
+
 
 ul > li {
     list-style: none;
