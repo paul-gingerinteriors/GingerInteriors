@@ -59,6 +59,11 @@ p, div {
     border-radius: 10px;
 }
 
+#hero-button > a {
+    text-decoration: none;
+    color: white;
+}
+
 main {
     text-align: center;
     align-items: center;
@@ -128,7 +133,7 @@ main {
     justify-content: space-around;
     padding: 30px;
     border-radius: 10px;
-    min-width: 50%;
+    min-width: 75%;
     min-height: 350px;
     text-align: left;
 }
@@ -229,6 +234,10 @@ i:hover {
         align-items: center;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .form {
+        min-width: 50%;
     }
      
 }
