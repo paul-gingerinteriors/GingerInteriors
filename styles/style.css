@@ -85,11 +85,19 @@ main {
 
 .service-card {
     background-color: black;
+    min-height: 200px;
     color: white;
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
+    transition: text;
+}
+
+.service-card:hover {
     box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .service-card > h2 {
@@ -156,6 +164,18 @@ i:hover {
     }
     .footer-content p {
         order: 1;
+    }
+
+    .service-card {
+        width: 30%;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
      
 }
