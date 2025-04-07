@@ -65,6 +65,7 @@ main {
     align-content: center;
     background-color: white;
     flex: 1 0 auto; /* Allow the main content to grow and take up available space */
+    padding-bottom: 30px;
 }
 
 .action-button {
