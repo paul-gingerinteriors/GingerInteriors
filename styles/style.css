@@ -121,6 +121,9 @@ main {
     text-align: center;
     align-items: center;
     align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     background: linear-gradient(to bottom, #f37021,white);
     flex: 1 0 auto; /* Allow the main content to grow and take up available space */
@@ -128,9 +131,8 @@ main {
 }
 
 #about-us {
-    transform: translateX(100%);
-    transition: all 1s;
-    transition-delay: 200ms;
+    text-align: center;
+    align-self: center;
 }
 
 .action-button {
@@ -193,6 +195,7 @@ main {
     flex-direction: column;
     padding: 20px;
     margin: 20px;
+    min-width: 80%;
 }
 
 .contact > h2 {
