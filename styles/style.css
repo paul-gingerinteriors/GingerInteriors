@@ -80,6 +80,7 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .action-button:hover {
@@ -95,7 +96,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-    transition: text;
+    transition: transform 0.3s ease;
 }
 
 .service-card:hover {
@@ -127,6 +128,7 @@ main {
 
 .form {
     background-color: black;
+    background: linear-gradient(to top, black, #f37021);
     color: white;
     display: flex;
     flex-direction: column;
@@ -136,6 +138,7 @@ main {
     min-width: 75%;
     min-height: 350px;
     text-align: left;
+    transition: all 0.3s ease;
 }
 
 .form input, .form textarea {
