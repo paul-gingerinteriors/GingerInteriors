@@ -131,6 +131,7 @@ main {
 }
 
 #about-us {
+    min-width: 75%;
     text-align: center;
     align-self: center;
 }
