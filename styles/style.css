@@ -125,9 +125,32 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-around;
     padding: 30px;
     border-radius: 10px;
+    min-width: 50%;
+    min-height: 350px;
+    text-align: left;
+}
+
+.form input, .form textarea {
+    background-color: whitesmoke;
+    color: black;
+    margin-bottom: 20px;
+
+}
+.form textarea {
+    min-height: 100px;
+}
+.form input::placeholder, .form textarea::placeholder {
+    color: #f37021;
+}
+
+.form:hover {
+    box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .form > * {
