@@ -22,3 +22,10 @@ logo.forEach((el) => logoObserver.observe(el));
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+const modal = document.querySelector('.intro-modal');
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        modal.classList.add('intro-modal-end');
+    }, 1000);
+});
