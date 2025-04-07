@@ -93,6 +93,10 @@ main {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.service {
+    flex-direction: column;
+}
+
 .service-card {
     background-color: black;
     min-height: 200px;
@@ -236,6 +240,19 @@ i:hover {
     filter: blur(0);
     transform: translateX(0);
 }
+
+@media screen and (max-width: 768px) {
+    .service-card:nth-child(1) {
+        transition-delay: 200ms;
+    }
+    .service-card:nth-child(2) {
+        transition-delay: 400ms;
+    }
+    .service-card:nth-child(3) {
+        transition-delay: 600ms;
+    }
+}
+    
 
 /* Media queries */
 @media(prefers-reduced-motion) {
