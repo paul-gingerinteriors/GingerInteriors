@@ -167,6 +167,10 @@ main {
     padding: 8px;
 }
 
+#submit-button {
+    max-width: 40%;
+}
+
 
 ul > li {
     list-style: none;
@@ -242,5 +246,17 @@ i:hover {
     .form {
         min-width: 50%;
     }
+
+    #submit-button {
+        max-width: 30%;
+    }
+
      
+}
+
+@media screen and (min-width: 992px) {
+    #submit-button {
+        max-width: 20%;
+    }
+    
 }
