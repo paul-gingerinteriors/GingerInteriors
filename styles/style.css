@@ -122,8 +122,15 @@ main {
     align-items: center;
     align-content: center;
     background-color: white;
+    background: linear-gradient(to bottom, #f37021,white);
     flex: 1 0 auto; /* Allow the main content to grow and take up available space */
     padding-bottom: 30px;
+}
+
+#about-us {
+    transform: translateX(100%);
+    transition: all 1s;
+    transition-delay: 200ms;
 }
 
 .action-button {
@@ -184,7 +191,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
     padding: 20px;
     margin: 20px;
 }
