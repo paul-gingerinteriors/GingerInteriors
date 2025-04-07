@@ -57,6 +57,7 @@ p, div {
 
 .hero {
     text-align: center;
+    background-color: grey;
 }
 
 #hero-button {
