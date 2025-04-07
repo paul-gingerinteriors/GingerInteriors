@@ -28,6 +28,10 @@ p, div {
         font-style: normal;
 }
 
+section {
+    min-height: 100vh;
+}
+
 .header {
     background-color: black;
     display: flex;
@@ -218,6 +222,28 @@ i:hover {
     gap: 25px;
 }
 
+
+/* Styling for transitions */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Media queries */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+  
 @media (min-width: 768px) {
     .footer-content {
         flex-direction: row;

@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ginger Interiors</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="header-container">
+        <div class="header-container hidden">
             <img src="images/GingerInteriors-No-Dot-small.png" alt="Ginger Interiors Logo" class="logo"
                 id="header-logo">
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero hidden">
         <div class="hero-content">
             <h1>Welcome to Ginger Interiors</h1>
             <p>Your trusted partner in drylining construction excellence.</p>
@@ -26,30 +27,30 @@
 
     <main>
 
-        <section class="about-us">
+        <section class="about-us hidden">
             <h2>About Us</h2>
             <p>Ginger Interiors is a leading drylining construction company with a commitment to quality and innovation.
                 Our team of experts is dedicated to delivering exceptional results for every project.</p>
             <button class="action-button">Learn More</button>
         </section>
 
-        <h2>Our Services</h2>
-        <section class="services">
+        <h2 class="hidden">Our Services</h2>
+        <section class="services hidden">
             <div class="service-card">
                 <h2>Commercial</h2>
                 <p>Our commercial drylining services are tailored to meet the needs of businesses and large-scale projects. We specialize in delivering high-quality finishes, efficient installations, and innovative solutions to ensure your commercial spaces are both functional and visually appealing.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card hidden">
                 <h2>Domestic</h2>
                 <p>Our domestic drylining services are designed to enhance the comfort and aesthetics of your home. We provide expert craftsmanship, efficient installations, and tailored solutions to meet your unique residential needs.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card hidden">
                 <h2>Garden Houses</h2>
                 <p>Our garden outhouse services provide expertly crafted, functional, and stylish solutions for your outdoor spaces. Whether you need a home office, a studio, or a relaxing retreat, we deliver high-quality designs tailored to your needs.</p>
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact hidden">
             <h2>Contact Form</h2>
             <form class="form" action="https://formspree.io/f/mblgpkve" method="POST" id="contact-form">
                 <label for="name">
@@ -78,7 +79,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/e2a727411d.js" crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
 </body>
 
 </html>
