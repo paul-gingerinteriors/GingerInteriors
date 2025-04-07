@@ -8,5 +8,17 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
+const logoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add('logo-end');
+        entry.target.classList.remove('logo-start');
+        }
+    });
+});
+
+const logo = document.querySelectorAll('.logo-start');
+logo.forEach((el) => logoObserver.observe(el));
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));

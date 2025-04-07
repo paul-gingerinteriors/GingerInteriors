@@ -242,6 +242,17 @@ i:hover {
     transform: translateX(0);
 }
 
+.logo-start {
+    transform: scale(0.5);
+    transition: transform 0.3s ease;
+}
+
+.logo-end {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    transition-delay: 400ms;
+}
+
 @media screen and (max-width: 768px) {
     .service-card:nth-child(1) {
         transition-delay: 200ms;
