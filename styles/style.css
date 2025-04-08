@@ -178,6 +178,7 @@ main {
     transition: box-shadow 0.3s ease;
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    transition-delay: 0ms;
 }
 
 .service-card > h2 {
