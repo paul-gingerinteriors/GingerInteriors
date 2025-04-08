@@ -186,6 +186,16 @@ main {
     color: #f37021
 }
 
+.service-card:nth-child(1) {
+    transition-delay: 200ms;
+}
+.service-card:nth-child(2) {
+    transition-delay: 400ms;
+}
+.service-card:nth-child(3) {
+    transition-delay: 600ms;
+}
+
 /* Carousel Styles */
 
 .carousel {
@@ -281,7 +291,7 @@ main {
     justify-content: space-around;
     padding: 30px;
     border-radius: 10px;
-    min-width: 75%;
+    min-width: 80%;
     min-height: 350px;
     text-align: left;
     transition: all 0.3s ease;
@@ -377,16 +387,8 @@ i:hover {
 }
 
 
-@media screen and (max-width: 768px) {
-    .service-card:nth-child(1) {
-        transition-delay: 200ms;
-    }
-    .service-card:nth-child(2) {
-        transition-delay: 300ms;
-    }
-    .service-card:nth-child(3) {
-        transition-delay: 400ms;
-    }
+@media screen and (min-width: 768px) {
+
 }
     
 
@@ -427,13 +429,14 @@ i:hover {
 
     .service-card {
         width: 30%;
+        min-height: 300px;
     }
 
     .services {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 20px;
     }
 
@@ -445,6 +448,10 @@ i:hover {
         max-width: 30%;
     }
 
+    .service-card {
+        width: 90%;
+    }
+
      
 }
 
@@ -452,7 +459,20 @@ i:hover {
     #submit-button {
         max-width: 20%;
     }
+
+    .service-card {
+        min-height: 200px;
+    }
     
+}
+
+@media screen and (max-width: 1120px) {
+    .services {
+        flex-wrap: wrap;
+    }
+    .service-card {
+        min-height: 200px;
+    }
 }
 
 
