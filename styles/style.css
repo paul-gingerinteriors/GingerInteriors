@@ -322,11 +322,6 @@ i:hover {
     
 
 /* Media queries */
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
   
 @media (min-width: 768px) {
 
@@ -380,4 +375,11 @@ i:hover {
         max-width: 20%;
     }
     
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
