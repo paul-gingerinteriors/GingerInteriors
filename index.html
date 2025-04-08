@@ -7,6 +7,7 @@
     <title>Ginger Interiors</title>
     <link rel="stylesheet" href="styles/style.css">
     <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/carousel.js"></script>
 </head>
 
 <body>
@@ -75,11 +76,22 @@
             </div>
         </section>
 
-        <section class="hidden">
+        <section class="hidden" aria-label="Gallery images carousel">
             <h2>The Gallery</h2>
-            <div class="gallery">
-                <img src="images/GingerInteriors-No-Dot.png" alt="placeholder" id="gallery-image">
-                <p>Image Description</p>
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/gallery-images/a man working on drywalling in a kitchen.png" alt="A man wokring on drywalling in a kitchen">
+                    </li>
+                    <li class="slide">
+                        <img src="images/gallery-images/drylining construction site in a domestic environment with less people.png" alt="A drylining construction site in a domestic environment with less people">
+                    </li>
+                    <li class="slide">
+                        <img src="images/gallery-images/modern outdoor building in a garden, annex type, suitable for office, bar_games room.png" alt="A modern outdoor building in a garden, annex type, suitable for office, bar/games room">
+                    </li>
+                </ul>
             </div>
         </section>
 
