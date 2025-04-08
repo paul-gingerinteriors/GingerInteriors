@@ -131,7 +131,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    background: linear-gradient(to bottom, #f37021,white);
+    /* background: linear-gradient(to bottom, #f37021,white); */
     flex: 1 0 auto; /* Allow the main content to grow and take up available space */
     padding-bottom: 30px;
 }
