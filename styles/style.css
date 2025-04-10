@@ -88,6 +88,7 @@ section {
     text-align: center;
     background-color: grey;
     min-height: 85vh;
+    border-top: #f37021 solid 2px;
 }
 
 #hero-image {
@@ -130,7 +131,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: black;
     /* background: linear-gradient(to bottom, #f37021,white); */
     flex: 1 0 auto; /* Allow the main content to grow and take up available space */
     padding-bottom: 30px;
@@ -164,13 +165,14 @@ main {
 
 .service-card {
     background-color: black;
-    background: linear-gradient(to bottom right, black, #f37021);
+    background: linear-gradient(to bottom, rgb(39, 38, 38), #f37021);
     min-height: 200px;
     color: white;
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
     transition: transform 0.3s ease;
+    border: white solid 2px;
 }
 
 .service-card:hover {
@@ -226,6 +228,7 @@ main {
     object-fit: cover;
     object-position: top;
     border-radius: 10px;
+    border: white solid 2px;
 }
 
 .slide[data-active] {
@@ -285,7 +288,7 @@ main {
 
 .form {
     background-color: black;
-    background: linear-gradient(to top, black, #f37021);
+    background: linear-gradient(to top, rgb(39,38,38), #f37021);
     color: white;
     display: flex;
     flex-direction: column;
@@ -296,6 +299,7 @@ main {
     min-height: 350px;
     text-align: left;
     transition: all 0.3s ease;
+    border: white solid 2px;
 }
 
 .form input, .form textarea {
@@ -336,6 +340,7 @@ footer {
     min-width: 100%;
     padding: 10px 0;
     flex-shrink: 0; /* Prevent the footer from shrinking */
+    border-top: white solid 2px;
 }
 
 .footer-content {
