@@ -34,6 +34,10 @@ p, div {
         font-size: 1.2rem;
 }
 
+h2 {
+    color: white;
+}
+
 section {
     min-height: 50vh;
 }
@@ -176,7 +180,8 @@ main {
 }
 
 .service-card:hover {
-    box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817);
+    /* box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817); */
+    box-shadow: 0 4px 8px rgba(252, 247, 242, 0.817);
     transition: box-shadow 0.3s ease;
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -316,7 +321,8 @@ main {
 }
 
 .form:hover {
-    box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817);
+    /* box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817); */
+    box-shadow: 0 4px 8px rgba(252, 247, 242, 0.817);
     transition: box-shadow 0.3s ease;
     transform: scale(1.05);
     transition: transform 0.3s ease;
