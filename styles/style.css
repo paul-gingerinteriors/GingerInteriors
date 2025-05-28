@@ -89,16 +89,28 @@ section {
 }
 /* Hero section */
 .hero {
-    text-align: center;
-    background-color: grey;
+    --bg-url: url('../images/huddyphotos/1.jpg');
+    --bg-opacity: 1;
+  
+    background-image: var(--bg-url); /* ← this line was missing */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-size: 100% 180%;
+  
+    position: relative;
     min-height: 85vh;
     border-top: #f37021 solid 2px;
-    position: relative;
-    background: url('../images/huddyphotos/10.jpg') no-repeat  center fixed;
-    background-size: 100% 180%;
-}
-
-.hero::before {
+    background-color: grey;
+    text-align: center;
+    overflow: hidden;
+  
+    transition: background-image 1s ease-in-out; /* Optional: helps visual feedback */
+  }
+  
+  
+  .hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -106,11 +118,13 @@ section {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
-}
+  }
+  
+  
 
 
 
-#hero-image {
+/* #hero-image {
     width: 100%;
     margin: 0px;
     height: 85vh;
@@ -118,7 +132,7 @@ section {
     object-fit: cover;
     object-position: center;
     opacity: 0.5;
-}
+} */
 
 #hero-text {
     position: absolute;
