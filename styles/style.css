@@ -219,6 +219,7 @@ main {
     width: 80vw;
     height: 60vh;
     position: relative;
+    background-color: black;
     background: url('../images/huddyphotos/1.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -233,10 +234,12 @@ main {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
 
+
 .carousel > ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    height: 100%;
 }
 
 .slide {
@@ -245,16 +248,24 @@ main {
     opacity: 0;
     transition: opacity 500ms ease-in-out;
     transition-delay: 200ms;
+    height: 100%;
 }
 
 .slide > img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     border-radius: 10px;
     border: white solid 2px;
+}
+
+@media screen and (min-width: 992px) {
+    .slide > img {
+        object-fit: contain;
+    }
+    
 }
 
 .slide[data-active] {
