@@ -22,6 +22,21 @@ imageNames.forEach((name, index) => {
     slidesContainer.appendChild(li);
 });
 
+function updateSlideBackground() {
+    const activeSlide = slidesContainer.querySelector('[data-active]');
+    const carousel = document.querySelector('.carousel');
+    if (activeSlide) {
+        const img = activeSlide.querySelector('img');
+        if (img) {
+            setTimeout(() => {
+                carousel.style.backgroundImage = `url(${img.src})`;
+            }
+            , 100); // Delay to ensure the image is loaded
+
+        }
+    }
+}
+
 
 
 
@@ -40,6 +55,6 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active;
         // Set 'data-active' on new slide
         slides.children[newIndex].dataset.active = '';
-        console.log(address + name);
+        updateSlideBackground();
     });
 });
