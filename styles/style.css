@@ -93,6 +93,7 @@ section {
     background-color: grey;
     min-height: 85vh;
     border-top: #f37021 solid 2px;
+    position: relative;
 }
 
 #hero-image {
@@ -179,14 +180,7 @@ main {
     border: white solid 2px;
 }
 
-.service-card:hover {
-    /* box-shadow: 0 4px 8px rgba(191, 106, 2, 0.817); */
-    box-shadow: 0 4px 8px rgba(252, 247, 242, 0.817);
-    transition: box-shadow 0.3s ease;
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-    transition-delay: 0ms;
-}
+
 
 .service-card > h2 {
     font-size: 1.5rem;
@@ -198,10 +192,10 @@ main {
     transition-delay: 200ms;
 }
 .service-card:nth-child(2) {
-    transition-delay: 400ms;
+    transition-delay: 300ms;
 }
 .service-card:nth-child(3) {
-    transition-delay: 600ms;
+    transition-delay: 400ms;
 }
 
 /* Carousel Styles */
