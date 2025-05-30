@@ -21,7 +21,14 @@
 }
 
 
-
+ .services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
 .card {
     min-height: 400px;
@@ -34,6 +41,7 @@
     overflow: hidden;
 
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
 
 }
 
@@ -43,7 +51,7 @@
 }
 
 .card-content {
-    --padding: 1.5rem;
+    --padding: 1.3rem;
     padding: var(--padding);
     background: linear-gradient(
     hsl(0 0% 0% / 0),
@@ -143,6 +151,13 @@
 .card-title::after {
     transform: scaleX(0);
 }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        margin: 0 2px;
+    }
     
 }
 
