@@ -216,10 +216,12 @@ main {
     padding: 0 10px;
 }
 
+#logo-about-us-container {
+    padding-bottom: 20px;
+}
+
 #logo-about-us-container > img {
     height: auto;
-    border-radius: 10px;
-    border: white solid 2px;
 }
 
 .action-button {
