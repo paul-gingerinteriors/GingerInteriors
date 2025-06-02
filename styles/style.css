@@ -557,8 +557,7 @@ i::after {
 
 @media screen and (max-width: 992px) {
     .hero {
-        background-size: cover; /* Adjust for smaller screens */
-        min-height: 100vh; /* Ensure it takes full height on mobile */
+        background-size: auto; /* Adjust for smaller screens */
     }
     
 }
