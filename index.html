@@ -82,8 +82,8 @@
         <section class="hidden" aria-label="Gallery images carousel">
             <h2>The Gallery</h2>
             <div class="carousel" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
-                <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+                <button class="carousel-button prev" data-carousel-button="prev" aria-label="Previous slide">&#8678;</button>
+                <button class="carousel-button next" data-carousel-button="next" aria-label="Next slide">&#8680;</button>
                 <ul data-slides>
                 </ul>
             </div>
@@ -95,12 +95,16 @@
                 <label for="name">
                     <h3>Name</h3>
                 </label>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <h3>Email</h3>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <h3>How can we help?</h3>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button class="action-button" id="submit-button" type="submit">Send</button>
+                <input type="text" name="name" id="name" placeholder="Your Name" required aria-label="Enter your name">
+                <label for="email">
+                    <h3>Email</h3>
+                </label>
+                <input type="email" name="email" id="email" placeholder="Your Email" required aria-label="Enter your email address">
+                <label for="message">
+                    <h3>How can we help?</h3>
+                </label>
+                <textarea name="message" id="message" placeholder="Your Message" required aria-label="Enter your message"></textarea>
+                <button class="action-button" id="submit-button" type="submit" aria-label="Send your message">Send</button>
             </form>
         </section>
     </main>
@@ -109,9 +113,9 @@
         <div class="footer-content">
             <!-- <img src="images/GingerInteriors-No-Dot copy.png" alt="Ginger Interiors Logo" class="footer-logo"> -->
             <div class="social-media">
-                <a href="https://facebook.com" alt="link to facebook" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://instagram.com" alt="link to instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="mailto:paul@gingerinteriors.net" alt="link to email" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:paul@gingerinteriors.net" target="_blank" aria-label="Send us an email"><i class="fa-solid fa-envelope"></i></a>
             </div>
             <p>&copy; 2025 Ginger Interiors. All rights reserved.</p>
         </div>
