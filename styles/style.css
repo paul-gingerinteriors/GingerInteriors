@@ -184,12 +184,7 @@ main {
     color: white;
 }
 
-@media screen and (max-width: 992px) {
-    #about-us {
-        min-height: 40vh;
-    }
-    
-}
+
 
 
 
@@ -471,18 +466,10 @@ i::after {
 }
 
 
-@media screen and (min-width: 992px) {
-    .slide > img {
-        object-fit: contain;
-    }
-    
-}
-    
+/* Consolidated Media Queries */
 
-/* Media queries */
-  
+/* Media queries for min-width: 768px */
 @media (min-width: 768px) {
-
     #hero-image {
         max-height: 85vh;
     }
@@ -502,15 +489,16 @@ i::after {
         object-position: center;
     }
 
-
     .footer-content {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
+
     .social-media {
         order: 2;
     }
+
     .footer-content p {
         order: 1;
     }
@@ -535,15 +523,14 @@ i::after {
     #submit-button {
         max-width: 30%;
     }
-
-    .service-card {
-        width: 90%;
-    }
-
-     
 }
 
+/* Media queries for min-width: 992px */
 @media screen and (min-width: 992px) {
+    .slide > img {
+        object-fit: contain;
+    }
+
     #submit-button {
         max-width: 20%;
     }
@@ -551,9 +538,9 @@ i::after {
     .service-card {
         min-height: 200px;
     }
-    
 }
 
+/* Media queries for max-width: 992px */
 @media screen and (max-width: 992px) {
     .hero {
         background-size: contain; /* Adjust for smaller screens */
@@ -562,19 +549,25 @@ i::after {
         background-repeat: no-repeat; /* Prevent repeating the background image */
         background-attachment: scroll; /* Disable fixed background attachment for smaller screens */
     }
-    
+
+    #about-us {
+        min-height: 40vh;
+    }
 }
 
+/* Media queries for max-width: 1120px */
 @media screen and (max-width: 1120px) {
     .services {
         flex-wrap: wrap;
     }
+
     .service-card {
         min-height: 200px;
     }
 }
 
-@media screen and (max-width: 768px) { 
+/* Media queries for max-width: 768px */
+@media screen and (max-width: 768px) {
     .footer-content > p {
         font-size: 1rem;
     }
