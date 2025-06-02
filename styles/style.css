@@ -108,6 +108,7 @@ section {
   
     transition: background-image 1s ease-in-out; /* Optional: helps visual feedback */
   }
+
   
   
   .hero::before {
@@ -172,23 +173,15 @@ main {
 }
 
 #about-us {
-    background-color: #f37021;
+    background-color: black;
     min-width: 100%;
     border-top: white solid 2px;
     border-bottom: white solid 2px;
     text-align: center;
     align-self: center;
     color: white;
-    background: url('../images/GingerInteriors-No-Dot.png') center center fixed;
-    background-size:contain;
 }
 
-@media screen and (max-width: 992px) {
-    #about-us {
-        background: url('../images/GingerInteriors-No-Dot.png') center center fixed;
-        background-size: cover;
-    }
-}
 
 #about-us::before {
     content: '';
@@ -289,12 +282,6 @@ main {
     border: white solid 2px;
 }
 
-@media screen and (min-width: 992px) {
-    .slide > img {
-        object-fit: contain;
-    }
-    
-}
 
 .slide[data-active] {
     opacity: 1;
@@ -485,8 +472,11 @@ i::after {
 }
 
 
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 992px) {
+    .slide > img {
+        object-fit: contain;
+    }
+    
 }
     
 
@@ -561,6 +551,14 @@ i::after {
 
     .service-card {
         min-height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        background-size: cover; /* Adjust for smaller screens */
+        min-height: 100vh; /* Ensure it takes full height on mobile */
     }
     
 }
