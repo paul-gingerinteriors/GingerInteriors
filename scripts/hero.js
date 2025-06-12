@@ -20,7 +20,6 @@ function changeHeroBackground() {
     hero.style.setProperty('--bg-url', nextImage);
     // Fade in
     hero.style.setProperty('--bg-opacity', '1');
-    console.log(`Changed to: ${nextImage}`);
   }, 1000); // Wait for fade-out
 }
 
