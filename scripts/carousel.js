@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('[data-carousel-button]');
 
 let address = 'images/huddyphotos/';
 const mediaItems = [
-    ...Array.from({ length: 31 }, (_, i) => ({ type: 'image', src: `${i + 1}.jpg` })),
+    ...Array.from({ length: 31 }, (_, i) => ({ type: 'image', src: `${i + 1}.webp` })),
     { type: 'video', src: '1.mp4' }
 ];
 
