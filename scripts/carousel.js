@@ -16,6 +16,7 @@ mediaItems.forEach((item, index) => {
     if (item.type === 'image') {
         const img = document.createElement('img');
         img.src = address + item.src;
+        img.loading = 'lazy'; // Lazy load images
         img.alt = `Media ${index + 1}`;
         li.appendChild(img);
     } else if (item.type === 'video') {
