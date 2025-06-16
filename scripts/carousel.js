@@ -1,24 +1,31 @@
 const buttons = document.querySelectorAll('[data-carousel-button]');
 
 let address = 'images/huddyphotos/';
-const imageNames = [
-    '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg',
-    '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg',
-    '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg'
+const mediaItems = [
+    ...Array.from({ length: 31 }, (_, i) => ({ type: 'image', src: `${i + 1}.jpg` })),
+    { type: 'video', src: '1.mp4' }
 ];
 
 const slidesContainer = document.querySelector('[data-slides]');
 
-imageNames.forEach((name, index) => {
+mediaItems.forEach((item, index) => {
     const li = document.createElement('li');
     li.classList.add('slide');
     if (index === 0) li.dataset.active = ''; // Set only the first as active
 
-    const img = document.createElement('img');
-    img.src = address + name;
-    img.alt = `Image ${index + 1}`; // Optional: You can change this as needed
+    if (item.type === 'image') {
+        const img = document.createElement('img');
+        img.src = address + item.src;
+        img.alt = `Media ${index + 1}`;
+        li.appendChild(img);
+    } else if (item.type === 'video') {
+        const video = document.createElement('video');
+        video.src = address + item.src;
+        video.controls = true; // Add controls for the video
+        video.alt = `Media ${index + 1}`;
+        li.appendChild(video);
+    }
 
-    li.appendChild(img);
     slidesContainer.appendChild(li);
 });
 
@@ -27,18 +34,16 @@ function updateSlideBackground() {
     const carousel = document.querySelector('.carousel');
     if (activeSlide) {
         const img = activeSlide.querySelector('img');
+        const video = activeSlide.querySelector('video');
         if (img) {
             setTimeout(() => {
                 carousel.style.backgroundImage = `url(${img.src})`;
-            }
-            , 100); // Delay to ensure the image is loaded
-
+            }, 100); // Delay to ensure the image is loaded
+        } else if (video) {
+            carousel.style.backgroundImage = ''; // Clear background for videos
         }
     }
 }
-
-
-
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
